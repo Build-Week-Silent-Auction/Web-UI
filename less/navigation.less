@@ -1,0 +1,38 @@
+// HEADER
+main section.section__landing {
+    height: 50vh;
+
+    header {
+        .flex(column, nowrap, space-around);
+        height: 100%;
+
+        .landing__top {
+            height: 25%;
+
+            nav {
+                .flex(row, nowrap, space-around);
+                height: 100%;
+                width: 85%;
+                margin: 0 auto;
+
+                .header__logo {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        margin: 0 auto;
+                    }
+                }
+
+                ul {
+                    .flex(row, nowrap);
+                    height: 70%;
+                }
+            }
+        }
+
+        .landing__bottom {
+            height: 55%;
+        }
+    }
+}
