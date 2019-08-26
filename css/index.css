@@ -126,7 +126,6 @@ table {
 }
 * {
   max-width: 100%;
-  border: 1px solid black;
   font-size: 62.5%;
 }
 html {
@@ -135,7 +134,7 @@ html {
 footer {
   padding-top: 3rem;
   padding-bottom: 2rem;
-  background-color: #124559;
+  background-image: linear-gradient(#598392, #124559);
   display: flex;
 }
 footer ul {
@@ -154,6 +153,7 @@ footer ul li {
 .footer__div a button {
   background-color: #598392;
   color: #fafaff;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0.25rem;
+  border: none;
 }
