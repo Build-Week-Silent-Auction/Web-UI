@@ -210,3 +210,12 @@ main section.section__landing header .landing__bottom .landing__bottom-inner p {
   font-size: 0.75rem;
   line-height: 1.3;
 }
+main section.section__landing header .landing__bottom .landing__bottom-inner button {
+  border: none;
+  background: #01161e;
+  color: #fafaff;
+  border-radius: 0.1rem;
+  padding: 0.2rem;
+  font-size: 0.75rem;
+  border-bottom: 1.5px solid #034159;
+}
