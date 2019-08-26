@@ -47,7 +47,22 @@ main section.section__landing {
         }
 
         .landing__bottom {
+            .flex(row, nowrap, flex-start);
             height: 55%;
+
+            .landing__bottom-inner {
+                .flex(column, nowrap, space-evenly);
+                width: 75%;
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: @x-sml;
+                    line-height: 1.3;
+                }
+            }
         }
     }
 }

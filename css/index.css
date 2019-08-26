@@ -188,5 +188,25 @@ main section.section__landing header .landing__top nav ul a {
   margin: 0.2rem;
 }
 main section.section__landing header .landing__bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: unset;
+  align-content: unset;
   height: 55%;
+}
+main section.section__landing header .landing__bottom .landing__bottom-inner {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: unset;
+  align-content: unset;
+  width: 75%;
+}
+main section.section__landing header .landing__bottom .landing__bottom-inner h1 {
+  font-size: 3rem;
+}
+main section.section__landing header .landing__bottom .landing__bottom-inner p {
+  font-size: 0.75rem;
+  line-height: 1.3;
 }
