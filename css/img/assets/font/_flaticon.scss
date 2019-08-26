@@ -1,0 +1,139 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 10/10/2018 10:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-001-law-book:before { content: "\f100"; }
+.flaticon-002-payment:before { content: "\f101"; }
+.flaticon-003-vase:before { content: "\f102"; }
+.flaticon-004-card:before { content: "\f103"; }
+.flaticon-005-stage:before { content: "\f104"; }
+.flaticon-006-mask:before { content: "\f105"; }
+.flaticon-007-auction:before { content: "\f106"; }
+.flaticon-008-microphone:before { content: "\f107"; }
+.flaticon-009-charity:before { content: "\f108"; }
+.flaticon-010-sport-car:before { content: "\f109"; }
+.flaticon-011-ring:before { content: "\f10a"; }
+.flaticon-012-safe-box:before { content: "\f10b"; }
+.flaticon-013-calendar:before { content: "\f10c"; }
+.flaticon-014-handshake:before { content: "\f10d"; }
+.flaticon-015-magnifying:before { content: "\f10e"; }
+.flaticon-016-megaphone:before { content: "\f10f"; }
+.flaticon-017-gift:before { content: "\f110"; }
+.flaticon-018-auction-1:before { content: "\f111"; }
+.flaticon-019-hand:before { content: "\f112"; }
+.flaticon-020-hand-1:before { content: "\f113"; }
+.flaticon-021-auction-2:before { content: "\f114"; }
+.flaticon-022-wristwatch:before { content: "\f115"; }
+.flaticon-023-crown:before { content: "\f116"; }
+.flaticon-024-placeholder:before { content: "\f117"; }
+.flaticon-025-notes:before { content: "\f118"; }
+.flaticon-026-stopwatch:before { content: "\f119"; }
+.flaticon-027-auction-3:before { content: "\f11a"; }
+.flaticon-028-check:before { content: "\f11b"; }
+.flaticon-029-wallet:before { content: "\f11c"; }
+.flaticon-030-books:before { content: "\f11d"; }
+.flaticon-031-computer:before { content: "\f11e"; }
+.flaticon-032-smartphone:before { content: "\f11f"; }
+.flaticon-033-money-bag:before { content: "\f120"; }
+.flaticon-034-award:before { content: "\f121"; }
+.flaticon-035-bidding:before { content: "\f122"; }
+.flaticon-036-laptop:before { content: "\f123"; }
+.flaticon-037-auctioneer:before { content: "\f124"; }
+.flaticon-038-delivery-truck:before { content: "\f125"; }
+.flaticon-039-certificate:before { content: "\f126"; }
+.flaticon-040-collection:before { content: "\f127"; }
+.flaticon-041-tag:before { content: "\f128"; }
+.flaticon-042-art:before { content: "\f129"; }
+.flaticon-043-necklace:before { content: "\f12a"; }
+.flaticon-044-cctv:before { content: "\f12b"; }
+.flaticon-045-cart:before { content: "\f12c"; }
+.flaticon-046-museum:before { content: "\f12d"; }
+.flaticon-047-auctioneer-1:before { content: "\f12e"; }
+.flaticon-048-chat:before { content: "\f12f"; }
+.flaticon-049-house:before { content: "\f130"; }
+.flaticon-050-statue:before { content: "\f131"; }
+    
+    $font-Flaticon-001-law-book: "\f100";
+    $font-Flaticon-002-payment: "\f101";
+    $font-Flaticon-003-vase: "\f102";
+    $font-Flaticon-004-card: "\f103";
+    $font-Flaticon-005-stage: "\f104";
+    $font-Flaticon-006-mask: "\f105";
+    $font-Flaticon-007-auction: "\f106";
+    $font-Flaticon-008-microphone: "\f107";
+    $font-Flaticon-009-charity: "\f108";
+    $font-Flaticon-010-sport-car: "\f109";
+    $font-Flaticon-011-ring: "\f10a";
+    $font-Flaticon-012-safe-box: "\f10b";
+    $font-Flaticon-013-calendar: "\f10c";
+    $font-Flaticon-014-handshake: "\f10d";
+    $font-Flaticon-015-magnifying: "\f10e";
+    $font-Flaticon-016-megaphone: "\f10f";
+    $font-Flaticon-017-gift: "\f110";
+    $font-Flaticon-018-auction-1: "\f111";
+    $font-Flaticon-019-hand: "\f112";
+    $font-Flaticon-020-hand-1: "\f113";
+    $font-Flaticon-021-auction-2: "\f114";
+    $font-Flaticon-022-wristwatch: "\f115";
+    $font-Flaticon-023-crown: "\f116";
+    $font-Flaticon-024-placeholder: "\f117";
+    $font-Flaticon-025-notes: "\f118";
+    $font-Flaticon-026-stopwatch: "\f119";
+    $font-Flaticon-027-auction-3: "\f11a";
+    $font-Flaticon-028-check: "\f11b";
+    $font-Flaticon-029-wallet: "\f11c";
+    $font-Flaticon-030-books: "\f11d";
+    $font-Flaticon-031-computer: "\f11e";
+    $font-Flaticon-032-smartphone: "\f11f";
+    $font-Flaticon-033-money-bag: "\f120";
+    $font-Flaticon-034-award: "\f121";
+    $font-Flaticon-035-bidding: "\f122";
+    $font-Flaticon-036-laptop: "\f123";
+    $font-Flaticon-037-auctioneer: "\f124";
+    $font-Flaticon-038-delivery-truck: "\f125";
+    $font-Flaticon-039-certificate: "\f126";
+    $font-Flaticon-040-collection: "\f127";
+    $font-Flaticon-041-tag: "\f128";
+    $font-Flaticon-042-art: "\f129";
+    $font-Flaticon-043-necklace: "\f12a";
+    $font-Flaticon-044-cctv: "\f12b";
+    $font-Flaticon-045-cart: "\f12c";
+    $font-Flaticon-046-museum: "\f12d";
+    $font-Flaticon-047-auctioneer-1: "\f12e";
+    $font-Flaticon-048-chat: "\f12f";
+    $font-Flaticon-049-house: "\f130";
+    $font-Flaticon-050-statue: "\f131";
