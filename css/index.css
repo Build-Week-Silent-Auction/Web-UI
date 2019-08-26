@@ -132,8 +132,13 @@ table {
 html {
   font-size: 1.6rem;
 }
+a:link,
+a:visited {
+  text-decoration: none;
+}
 main section.section__landing {
   height: 50vh;
+  background-image: linear-gradient(#124559, #598392);
 }
 main section.section__landing header {
   display: flex;
@@ -142,6 +147,9 @@ main section.section__landing header {
   align-items: unset;
   align-content: unset;
   height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  color: #fafaff;
 }
 main section.section__landing header .landing__top {
   height: 25%;
@@ -149,15 +157,14 @@ main section.section__landing header .landing__top {
 main section.section__landing header .landing__top nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: unset;
+  justify-content: space-between;
+  align-items: center;
   align-content: unset;
   height: 100%;
-  width: 85%;
   margin: 0 auto;
 }
 main section.section__landing header .landing__top nav .header__logo {
-  height: 100%;
+  height: 80%;
 }
 main section.section__landing header .landing__top nav .header__logo img {
   height: 100%;
@@ -166,10 +173,19 @@ main section.section__landing header .landing__top nav .header__logo img {
 main section.section__landing header .landing__top nav ul {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: unset;
-  align-items: unset;
+  justify-content: center;
+  align-items: center;
   align-content: unset;
   height: 70%;
+  width: 40%;
+}
+main section.section__landing header .landing__top nav ul li {
+  padding: 0.65rem;
+  border-radius: 0.75rem;
+  color: #fafaff;
+}
+main section.section__landing header .landing__top nav ul a {
+  margin: 0.2rem;
 }
 main section.section__landing header .landing__bottom {
   height: 55%;
