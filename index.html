@@ -9,29 +9,29 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-        <script>
-            // Window event listener for when all assets are loaded
-            window.addEventListener('load', function() {
-                let dropdown = document.getElementsByClassName("dropdown")[0];
+      <script>
+          // Window event listener for when all assets are loaded
+          window.addEventListener('load', function() {
+              let dropdown = document.getElementsByClassName("dropdown")[0];
 
-                dropdown.addEventListener('click', (e) => {
-                    // Hidden navigation
-                    let hiddenNav = document.querySelector(".nav-list__two");
+              dropdown.addEventListener('click', (e) => {
+                  // Hidden navigation
+                  let hiddenNav = document.querySelector(".nav-list__two");
 
-                    // Click indicator
-                    const eClick = e.target;
-                    console.log(eClick);
+                  // Click indicator
+                  const eClick = e.target;
+                  console.log(eClick);
 
-                    // Validation if eClick is true, do action.
-                    if (eClick) {
-                        console.log(
-                            hiddenNav.classList.toggle("active"),
-                            hiddenNav.classList
-                            );
-                    }
-                })
-            })
-        </script>
+                  // Validation if eClick is true, do action.
+                  if (eClick) {
+                      console.log(
+                          hiddenNav.classList.toggle("active"),
+                          hiddenNav.classList
+                          );
+                  }
+              })
+          })
+      </script>
 </head>
 
 <body>
@@ -119,18 +119,47 @@
             </div>
         </section>
         <section class="section__highlights">
-            <h2>Section highlights</h2>
+            <h2>Feature highlights</h2>
             <div class="highlight-list">
-                <ul>
+                <div class='coloumn-one'>
+                    <div>
+                        <h2>one feature</h2>
+                        <p>something about feature</p>
+                    </div>
+                    <div>
+                        <h2>second feature</h2>
+                        <p>something about feature two</p>
+                    </div>
+                    <div>
+                        <h2>third feature</h2>
+                        <p>something about feature three</p>
+                    </div>
+                </div>
+                <div class='coloumn-two'>
+                    <div>
+                        <h2>fourth feature</h2>
+                        <p>something about feature four</p>
+                    </div>
+                    <div>
+                        <h2>fifth feature</h2>
+                        <p>something about feature five</p>
+                    </div>
+                    <div>
+                        <h2>sixth feature</h2>
+                        <p>something about feature six</p>
+                    </div>                    
+                </div>
+            </div>
+                <!-- <ul>
                     <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul>
+                </ul> -->
 
-                <a href="">See more</a>
+                <a href="">See all features</a>
             </div>
         </section>
         <section class="section__reviews">
