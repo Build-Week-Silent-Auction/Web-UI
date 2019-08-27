@@ -177,14 +177,6 @@ footer ul li {
   flex-wrap: wrap;
   background-image: linear-gradient(#124559, #598392);
 }
-@keyframes fadeout {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
-}
 .reviews__carousel .reviews__review {
   display: flex;
   flex-wrap: wrap;
@@ -192,13 +184,4 @@ footer ul li {
   color: #fafaff;
   padding: 2rem;
   font-size: 1rem;
-  animation: 2s infinite alternate fadeout;
-}
-@keyframes fadeout {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-  }
 }
