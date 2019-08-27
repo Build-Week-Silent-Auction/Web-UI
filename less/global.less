@@ -1,10 +1,26 @@
 // GLOBALS
 * {
     max-width: 100%;
-    border: 1px solid black;
+    // border: 1px solid black;
     font-size: 62.5%;
 }
 
 html {
     font-size: @sml;
+}
+
+// LINKS
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+// ACTIVE CSS CLASS
+.active {
+    z-index: 1 !important;
+}
+
+// INACTIVE CSS CLASS
+.inactive {
+    z-index: -1 !important;
 }
