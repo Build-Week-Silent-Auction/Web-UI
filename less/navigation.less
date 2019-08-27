@@ -4,6 +4,11 @@ main section.section__landing {
 
     background-image: linear-gradient(@bg-color , @content-bg__secondary);
 
+    // Mobile max-500px
+    @media @mobile_500 {
+        height: 70vh;
+    }
+
     header {
         .flex(column, nowrap, space-around);
         height: 100%;
@@ -11,16 +16,41 @@ main section.section__landing {
         margin: 0 auto;
         color: @text;
 
+        // Mobile max-500px
+        @media @mobile_500 {
+            width: 100%;
+        }
+
         .landing__top {
+            position: relative;
             height: 25%;
 
-            nav {
+            // Mobile max-500px
+            @media @mobile_500 {
+                height: 45%;
+            }
+
+            // MAIN
+            // NAVIGATION
+            .nav-list__one {
                 .flex(row, nowrap, space-between, center);
                 height: 100%;
                 margin: 0 auto;
 
+                // Mobile max-500px
+                @media @mobile_500 {
+                    .flex(row, nowrap, space-between, flex-start);
+                    height: 25%;
+                    width: 95%;
+                }
+
                 .header__logo {
                     height: 80%;
+
+                    // Mobile max-500px
+                    @media @mobile_500 {
+                        height: 95%;
+                    }
 
                     img {
                         height: 100%;
@@ -33,6 +63,12 @@ main section.section__landing {
                     height: 70%;
                     width: 40%;
 
+                    // Mobile max-500px
+                    @media @mobile_500 {
+                        // height: min-content;
+                        display: none;
+                    }
+
                     li {
                         padding: 0.65rem;
                         border-radius: @x-sml;
@@ -43,35 +79,74 @@ main section.section__landing {
                         margin: 0.2rem;
                     }
                 }
+
+                .dropdown:hover,
+                .dropdown div:hover {
+                    cursor: pointer;
+                }
+
+                .dropdown {
+                    .flex(column, nowrap, center);
+                    height: 1.8rem;
+                    width: 2rem;
+                    border: 1px solid transparent;
+                    border-color: rgba(250, 250, 255, 0.3);
+                    border-radius: 0.15rem;
+                    margin-top: 0.3rem;
+                    z-index: -1;
+
+                    // Mobile max-500px
+                    @media @mobile_500 {
+                        z-index: 1;
+                    }
+
+
+                    div {
+                        height: 10%;
+                        width: 55%;
+                        background-color: #f0f0ff;
+                        margin: 0.1rem auto;
+                        border-radius: 1rem;
+                        padding: 0.01rem;
+                    }
+                }
+            }
+
+            // HIDDEN
+            // NAVIGATION
+            .nav-list__two {
+                .flex(column, nowrap, center, center);
+                position: relative;
+                z-index: -1;
             }
         }
+    }
 
-        .landing__bottom {
-            .flex(row, nowrap, flex-start);
-            height: 55%;
+    .landing__bottom {
+        .flex(row, nowrap, flex-start);
+        height: 55%;
 
-            .landing__bottom-inner {
-                .flex(column, nowrap, space-evenly);
-                width: 75%;
+        .landing__bottom-inner {
+            .flex(column, nowrap, space-evenly);
+            width: 75%;
 
-                h1 {
-                    font-size: 3rem;
-                }
+            h1 {
+                font-size: 3rem;
+            }
 
-                p {
-                    font-size: @x-sml;
-                    line-height: 1.3;
-                }
+            p {
+                font-size: @x-sml;
+                line-height: 1.3;
+            }
 
-                button {
-                    border: none;
-                    background: @content-bg;
-                    color: @text;
-                    border-radius: 0.1rem;
-                    padding: 0.2rem;
-                    font-size: @x-sml;
-                    border-bottom: 1.5px solid lighten(@content-bg, 12%);
-                }
+            button {
+                border: none;
+                background: @content-bg;
+                color: @text;
+                border-radius: 0.1rem;
+                padding: 0.2rem;
+                font-size: @x-sml;
+                border-bottom: 1.5px solid lighten(@content-bg, 12%);
             }
         }
     }
