@@ -15,13 +15,31 @@ footer {
         }
     }
 
-    @media @mobile {
-        
+    @media @mobile_500 {
+
     }
 }
 
 .footer__div {
     display: flex;
+    flex-wrap: wrap;
+    @media @mobile_500 {
+        flex-direction: column-reverse;
+        // justify-content: space-evenly;
+        // a {
+        //    justify-content: space-evenly;
+        // }
+        a{
+            // margin-left: -5rem;
+            button {
+                justify-content: center;
+                margin-left: -4.5rem;
+                margin-bottom: 2rem;
+                width: 10rem;
+            }
+        }
+
+    }   
     a {
         // flex-direction: row-reverse;
         margin-left: 10rem;
@@ -33,5 +51,6 @@ footer {
             border: none;
             // box-shadow: 5px 5px 5px #888;
         }
+        
     }
 }
