@@ -1,0 +1,12 @@
+// BASE FLEXBOX
+.flex(@flow: row,
+    @wrap: nowrap,
+    @j-content: unset,
+    @a-items: unset,
+    @a-content: unset) {
+    display: flex;
+    flex-flow: @flow @wrap;
+    justify-content: @j-content;
+    align-items: @a-items;
+    align-content: @a-content;
+}
