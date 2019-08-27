@@ -132,3 +132,10 @@ table {
 html {
   font-size: 1.6rem;
 }
+.highlight-list {
+  display: flex;
+  border: 2px solid red;
+}
+.highlight-list .coloumn-one {
+  display: flex;
+}
