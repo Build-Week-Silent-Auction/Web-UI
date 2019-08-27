@@ -136,6 +136,8 @@ footer {
   padding-bottom: 2rem;
   background-image: linear-gradient(#598392, #124559);
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 footer ul {
   display: flex;
@@ -170,6 +172,7 @@ footer ul li {
   border: none;
 }
 .reviews__carousel {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   background-image: linear-gradient(#124559, #598392);
