@@ -27,7 +27,7 @@ main section.section__landing {
 
             // Mobile max-500px
             @media @mobile_500 {
-                height: 45%;
+                height: 3rem;
             }
 
             // MAIN
@@ -40,8 +40,12 @@ main section.section__landing {
                 // Mobile max-500px
                 @media @mobile_500 {
                     .flex(row, nowrap, space-between, flex-start);
-                    height: 25%;
+                    height: 3rem;
                     width: 95%;
+                    position: absolute;
+                    top: -2rem;
+                    right: 0;
+                    left: 0;
                 }
 
                 .header__logo {
@@ -126,12 +130,28 @@ main section.section__landing {
         .flex(row, nowrap, flex-start);
         height: 55%;
 
+        // Mobile max-500px
+        @media @mobile_500 {
+            height: 14rem;
+        }
+
         .landing__bottom-inner {
             .flex(column, nowrap, space-evenly);
             width: 75%;
 
+            // Mobile max-500px
+            @media @mobile_500 {
+                width: 90%;
+                margin: 0 auto;
+            }
+
             h1 {
                 font-size: 3rem;
+
+                // Mobile max-500px
+                @media @mobile_500 {
+                    font-size: 2rem;
+                }
             }
 
             p {
@@ -139,14 +159,23 @@ main section.section__landing {
                 line-height: 1.3;
             }
 
-            button {
-                border: none;
-                background: @content-bg;
-                color: @text;
-                border-radius: 0.1rem;
-                padding: 0.2rem;
-                font-size: @x-sml;
-                border-bottom: 1.5px solid lighten(@content-bg, 12%);
+            a {
+
+                // Mobile max-500px
+                @media @mobile_500 {
+                    text-align: center;
+                }
+
+                button {
+                    border: none;
+                    background: @content-bg;
+                    color: @text;
+                    border-radius: 0.1rem;
+                    padding: 0.2rem;
+                    font-size: @x-sml;
+                    border-bottom: 1.5px solid lighten(@content-bg, 15%);
+                    border-left: 1.5px solid lighten(@content-bg, 15%);
+                }
             }
         }
     }
