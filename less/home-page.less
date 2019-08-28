@@ -1,7 +1,5 @@
-//"Feature highlights" mid-section of the page
-// *{
-//     border: none;
-// }
+// REVIEW SECTION STYLE
+
 
 .section__highlights {
     display: flex;
@@ -21,11 +19,31 @@
     }
 
     a {
-        display: flex;
-        text-decoration: none;
-        color: #fafaff;
 
+.reviews__carousel {
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(@bg-color, @content-bg__secondary);
+    // @keyframes fadeout {
+            
+    //     from{
+    //         opacity: 100%;
+    //     }
+    //     to {
+    //         opacity: 0%;
+    //     }
+    // }
+    .reviews__review {
+
+        display: flex;
+        flex-wrap: wrap;
+        // padding: 0.5rem, auto;
+        text-align: center;
+        color: @text;
+        padding: 2rem;
         font-size: 1rem;
+
         justify-content: center;
     }
 
@@ -104,6 +122,19 @@
                 }
             }
         }
+
+
+        // animation: 2s infinite alternate fadeout;
+        // @keyframes fadeout {
+            
+        //     from{
+        //         opacity: 100%;
+        //     }
+        //     to {
+        //         opacity: 0%;
+        //     }
+        // }
+
     }
 }
 

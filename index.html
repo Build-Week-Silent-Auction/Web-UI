@@ -9,96 +9,35 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-      <script>
-          // Window event listener for when all assets are loaded
-          window.addEventListener('load', function() {
-              let dropdown = document.getElementsByClassName("dropdown")[0];
-
-              dropdown.addEventListener('click', (e) => {
-                  // Hidden navigation
-                  let hiddenNav = document.querySelector(".nav-list__two");
-
-                  // Click indicator
-                  const eClick = e.target;
-                  console.log(eClick);
-
-                  // Validation if eClick is true, do action.
-                  if (eClick) {
-                      console.log(
-                          hiddenNav.classList.toggle("active"),
-                          hiddenNav.classList
-                          );
-                  }
-              })
-          })
-      </script>
 </head>
 
 <body>
     <main>
         <section class="section__landing">
-            <header>
-                <div class="landing__top">
-                    <!-- MAIN NAVIGATION -->
-                    <nav class="nav-list__one">
+            <div class="landing">
+                <div class="header">
+                    <nav>
                         <div class="header__logo">
-                            <a href="./index.html">
-                                <img src="./css/img/assets/Header/Logo__Header_1.png" alt="header logo">
-                            </a>
+                            <img src="" alt="header logo">
                         </div>
                         <ul>
-                            <a href="./index.html">
-                                <li>Home</li>
-                            </a>
-                            <a href="About__Link__Here">
-                                <li>About</li>
-                            </a>
-                            <a href="Contact__Link__Here">
-                                <li>Contact</li>
-                            </a>
-                            <a href="Login__link__here">
-                                <li>Login</li>
-                            </a>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
-
-                        <div class="dropdown">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
                     </nav>
-
-                    <!-- HIDDEN NAVIGATION FOR DROPDOWN -->
-                    <div class="nav-list__two">
-                        <ul>
-                            <a href="./index.html">
-                                <li>Home</li>
-                            </a>
-                            <a href="About__Link__Here">
-                                <li>About</li>
-                            </a>
-                            <a href="Contact__Link__Here">
-                                <li>Contact</li>
-                            </a>
-                            <a href="Login__link__here">
-                                <li>Login</li>
-                            </a>
-                        </ul>
-                    </div>
                 </div>
 
-                <div class="landing__bottom">
-                    <div class="landing__bottom-inner">
-                        <h1>Start a Slient Auction</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua.</p>
+                <div>
+                    <h1>header here</h1>
+                    <p>Lorem ipsum</p>
 
-                        <a href="Link here">
-                            <button>Get Started!</button>
-                        </a>
-                    </div>
+                    <a href="Link here">
+                        <button></button>
+                    </a>
                 </div>
-            </header>
+            </div>
 
         </section>
         <section class="section__auction-items">
@@ -123,71 +62,28 @@
             </div>
         </section>
         <section class="section__highlights">
-            <h2>Feature highlights</h2>
+            <h2>Section highlights</h2>
             <div class="highlight-list">
-                <div class='coloumn-one'>
-                    <div>
-                        <h2>one feature</h2>
-                        <p>something about feature</p>
-                    </div>
-                    <div>
-                        <h2>second feature</h2>
-                        <p>something about feature two</p>
-                    </div>
-                    <div>
-                        <h2>third feature</h2>
-                        <p>something about feature three</p>
-                    </div>
-                </div>
-                <div class='coloumn-two'>
-                    <div>
-                        <h2>fourth feature</h2>
-                        <p>something about feature four</p>
-                    </div>
-                    <div>
-                        <h2>fifth feature</h2>
-                        <p>something about feature five</p>
-                    </div>
-                    <div>
-                        <h2>sixth feature</h2>
-                        <p>something about feature six</p>
-                    </div>                    
-                </div>
-            </div>
-                <!-- <ul>
+                <ul>
                     <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul> -->
+                </ul>
 
-                <a href="">See all features</a>
+                <a href="">See more</a>
             </div>
         </section>
         <section class="section__reviews">
             <div class="reviews">
-                <div class="reviews__logo">
+                <!-- <div class="reviews__logo">
                     <img src="reviews__logo-link" alt="review logo">
-                </div>
+                </div> -->
 
                 <div class="reviews__carousel">
-                    <div class="reviews__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.ƒ</div>
-                    <div class="reviews__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.ƒ</div>
-                    <div class="reviews__review">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.ƒ</div>
+                    <div class="reviews__review">Easy, accessable auction. It was great! My buyers are excited about their purchases!<br> - Lex Luthor</div>
                 </div>
             </div>
         </section>
@@ -196,13 +92,13 @@
         <div class="footer__div">
             <nav>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Auctions</li>
+                    <li>FAQ</li>
                 </ul>
             </nav>
-
+            
             <a href="footer-btn__link">
                 <button>Get Started</button>
             </a>
