@@ -1,0 +1,57 @@
+// FOOTER STYLES
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-image: linear-gradient(@content-bg__secondary, @bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    ul {
+        display: flex;
+        li {
+            color: @text;
+            // justify-content: space-evenly;
+            margin: 0 1rem;
+        }
+    }
+
+    @media @mobile_500 {
+
+    }
+}
+
+.footer__div {
+    display: flex;
+    flex-wrap: wrap;
+    @media @mobile_500 {
+        flex-direction: column-reverse;
+        // justify-content: space-evenly;
+        // a {
+        //    justify-content: space-evenly;
+        // }
+        a{
+            // margin-left: -5rem;
+            button {
+                justify-content: center;
+                margin-left: -4.5rem;
+                margin-bottom: 2rem;
+                width: 10rem;
+            }
+        }
+
+    }   
+    a {
+        // flex-direction: row-reverse;
+        margin-left: 10rem;
+        button {
+            background-color: @content-bg__secondary;
+            color: @text;
+            border-radius: 5px;
+            padding: .25rem;
+            border: none;
+            // box-shadow: 5px 5px 5px #888;
+        }
+        
+    }
+}
