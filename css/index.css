@@ -184,4 +184,13 @@ footer ul li {
   color: #fafaff;
   padding: 2rem;
   font-size: 1rem;
+  animation: 2s infinite alternate fadeout;
+}
+@keyframes fadeout {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
