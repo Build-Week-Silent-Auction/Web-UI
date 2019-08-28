@@ -5,15 +5,7 @@
     display:flex;
     flex-wrap: wrap;
     background-image: linear-gradient(@bg-color, @content-bg__secondary);
-    // @keyframes fadeout {
-            
-    //     from{
-    //         opacity: 100%;
-    //     }
-    //     to {
-    //         opacity: 0%;
-    //     }
-    // }
+    
     .reviews__review {
         display: flex;
         flex-wrap: wrap;
@@ -23,15 +15,17 @@
         padding: 2rem;
         font-size: 1rem;
 
-        // animation: 2s infinite alternate fadeout;
-        // @keyframes fadeout {
-            
-        //     from{
-        //         opacity: 100%;
-        //     }
-        //     to {
-        //         opacity: 0%;
-        //     }
-        // }
+        animation: 2s infinite alternate fadeout;
+        
     }
 }
+
+@keyframes fadeout {
+            
+        from{
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+        }
+    }
