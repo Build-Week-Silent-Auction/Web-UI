@@ -127,3 +127,31 @@ footer{
         flex-wrap: wrap; 
     }
 }
+
+// mobile code for the about page
+
+@media (max-width: 500px){
+    .landing__top{
+        nav{
+            display: flex;
+            justify-content: center;
+            max-width: 50%;
+            .header__logo{
+                a{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .landing__bottom-inner{
+        h1{
+            display: flex;
+            flex-direction: flex-end;
+        }
+    }
+}
