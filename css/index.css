@@ -215,11 +215,11 @@ html {
 * {
   border: none;
 }
-main section.section__landing {
+.aboutPageMain section.section__landing {
   height: 35vh;
   background-image: linear-gradient(#124559, #598392);
 }
-main section.section__landing header {
+.aboutPageMain section.section__landing header {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -230,10 +230,10 @@ main section.section__landing header {
   margin: 0 auto;
   color: #fafaff;
 }
-main section.section__landing header .landing__top {
+.aboutPageMain section.section__landing header .landing__top {
   height: 25%;
 }
-main section.section__landing header .landing__top nav {
+.aboutPageMain section.section__landing header .landing__top nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -242,14 +242,14 @@ main section.section__landing header .landing__top nav {
   height: 100%;
   margin: 0 auto;
 }
-main section.section__landing header .landing__top nav .header__logo {
+.aboutPageMain section.section__landing header .landing__top nav .header__logo {
   height: 80%;
 }
-main section.section__landing header .landing__top nav .header__logo img {
+.aboutPageMain section.section__landing header .landing__top nav .header__logo img {
   height: 100%;
   margin: 0 auto;
 }
-main section.section__landing header .landing__top nav ul {
+.aboutPageMain section.section__landing header .landing__top nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -258,15 +258,15 @@ main section.section__landing header .landing__top nav ul {
   height: 70%;
   width: 40%;
 }
-main section.section__landing header .landing__top nav ul li {
+.aboutPageMain section.section__landing header .landing__top nav ul li {
   padding: 0.65rem;
   border-radius: 0.75rem;
   color: #fafaff;
 }
-main section.section__landing header .landing__top nav ul a {
+.aboutPageMain section.section__landing header .landing__top nav ul a {
   margin: 0.2rem;
 }
-main section.section__landing header .landing__bottom {
+.aboutPageMain section.section__landing header .landing__bottom {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -274,7 +274,7 @@ main section.section__landing header .landing__bottom {
   align-content: unset;
   height: 55%;
 }
-main section.section__landing header .landing__bottom .landing__bottom-inner {
+.aboutPageMain section.section__landing header .landing__bottom .landing__bottom-inner {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -282,7 +282,7 @@ main section.section__landing header .landing__bottom .landing__bottom-inner {
   align-content: unset;
   width: 75%;
 }
-main section.section__landing header .landing__bottom .landing__bottom-inner h1 {
+.aboutPageMain section.section__landing header .landing__bottom .landing__bottom-inner h1 {
   font-size: 3rem;
 }
 section.aboutContent {
