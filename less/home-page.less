@@ -3,20 +3,23 @@
 //     border: none;
 // }
 
-.section__highlights{
+.section__highlights {
     display: flex;
     flex-direction: column;
     padding: 3% 0%;
     background-color: #124559;
     color: #fafaff;
-    *{
+
+    * {
         border: none;
     }
-    h2{
+
+    h2 {
         display: flex;
         justify-content: center;
         font-size: 1.2rem;
     }
+
     a {
         display: flex;
         text-decoration: none;
@@ -25,25 +28,31 @@
         font-size: 1rem;
         justify-content: center;
     }
-    .highlight-list{
+
+    .highlight-list {
         display: flex;
         justify-content: center;
-        h2{
+
+        h2 {
             font-size: .75rem;
         }
-        .coloumn-one{
+
+        .coloumn-one {
             display: flex;
             flex-direction: column;
             padding-right: 10%;
-            div{
+
+            div {
                 padding: 20% 0%;
             }
         }
-        .coloumn-two{
+
+        .coloumn-two {
             display: flex;
             flex-direction: column;
             padding-left: 10%;
-            div{
+
+            div {
                 padding: 20% 0%;
             }
         }
@@ -52,39 +61,85 @@
 
 //Mobile Version
 
-@media(max-width: 500px){
-    .section__highlights{
-        .highlight-list{
+@media(max-width: 500px) {
+    .section__highlights {
+        .highlight-list {
             display: flex;
             flex-direction: column;
-            div{
+
+            div {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
             }
-            p{
+
+            p {
                 display: flex;
                 justify-content: center;
             }
-            .coloumn-one{
+
+            .coloumn-one {
                 padding: 0% 10%;
                 font-size: 1rem;
-                h2{
+
+                h2 {
                     font-size: 1.2rem;
                 }
-                div{
+
+                div {
                     padding: 5%;
                 }
             }
-            .coloumn-two{
+
+            .coloumn-two {
                 padding: 0 10%;
                 font-size: 1rem;
-                h2{
+
+                h2 {
                     font-size: 1.2rem;
                 }
-                div{
+
+                div {
                     padding: 5%;
                 }
+            }
+        }
+    }
+}
+
+// AUCTION
+// ITEMS
+// SECTION
+main section.section__auction-items {
+    .flex(column, nowrap, unset, center);
+    background-image: linear-gradient(@content-bg__secondary, @bg-color);
+
+    h2 {
+        font-size: @sml;
+    }
+
+    // AUCTION DIV
+    // CONTAINER
+    div.auction__items {
+        .flex(row, wrap, center);
+        width: 70%;
+
+        // INNER DIV
+        // AUCTION ITEM
+        .auction-item__container {
+            .flex(column, nowrap, unset, center);
+            width: 40%;
+            margin: 1rem;
+            // background-color: rgba(250, 250, 255, 1);
+            background-color: red;
+
+            // TARGET ALL CHILDREN
+            * {
+                padding: 0.4rem;
+            }
+
+            h3 {
+                font-size: @x-sml * 1.5%;
             }
         }
     }
