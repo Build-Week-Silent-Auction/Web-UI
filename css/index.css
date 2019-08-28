@@ -144,6 +144,9 @@ a:visited {
 main section.section__landing {
   height: 50vh;
   background-image: linear-gradient(#124559, #598392);
+  box-shadow: 0px 10px 2rem 1px #000000;
+  position: relative;
+  z-index: 6;
 }
 @media (max-width: 500px) {
   main section.section__landing {
@@ -253,7 +256,7 @@ main section.section__landing header .landing__top .nav-list__one .dropdown {
 }
 @media (max-width: 500px) {
   main section.section__landing header .landing__top .nav-list__one .dropdown {
-    z-index: 1;
+    z-index: 10;
   }
 }
 main section.section__landing header .landing__top .nav-list__one .dropdown div {
@@ -414,6 +417,11 @@ main section.section__auction-items {
   align-items: center;
   align-content: unset;
   background-image: linear-gradient(#598392, #124559);
+  box-shadow: 0px 10px 2rem 1px #000000;
+  padding-top: 0.75rem;
+  position: relative;
+  z-index: 5;
+  color: #fafaff;
 }
 main section.section__auction-items h2 {
   font-size: 1.6rem;
@@ -434,7 +442,8 @@ main section.section__auction-items div.auction__items .auction-item__container 
   align-content: unset;
   width: 40%;
   margin: 1rem;
-  background-color: red;
+  background-color: rgba(250, 250, 255, 0.05);
+  border-radius: 0.2rem;
 }
 main section.section__auction-items div.auction__items .auction-item__container * {
   padding: 0.4rem;
