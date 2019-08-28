@@ -434,6 +434,11 @@ main section.section__auction-items div.auction__items {
   align-content: unset;
   width: 70%;
 }
+@media (max-width: 500px) {
+  main section.section__auction-items div.auction__items {
+    width: 80%;
+  }
+}
 main section.section__auction-items div.auction__items .auction-item__container {
   display: flex;
   flex-flow: column nowrap;
@@ -445,9 +450,19 @@ main section.section__auction-items div.auction__items .auction-item__container 
   background-color: rgba(250, 250, 255, 0.05);
   border-radius: 0.2rem;
 }
+@media (max-width: 500px) {
+  main section.section__auction-items div.auction__items .auction-item__container {
+    width: 75%;
+  }
+}
 main section.section__auction-items div.auction__items .auction-item__container * {
   padding: 0.4rem;
 }
 main section.section__auction-items div.auction__items .auction-item__container h3 {
   font-size: 1.125rem;
+}
+@media (max-width: 500px) {
+  main section.section__auction-items div.auction__items .auction-item__container h3 {
+    font-size: 0.75rem;
+  }
 }

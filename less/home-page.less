@@ -129,6 +129,11 @@ main section.section__auction-items {
         .flex(row, wrap, center);
         width: 70%;
 
+        // Mobile max-500px
+        @media @mobile_500 {
+            width: 80%;
+        }
+
         // INNER DIV
         // AUCTION ITEM
         .auction-item__container {
@@ -138,6 +143,11 @@ main section.section__auction-items {
             background-color: rgba(@text, 0.05);
             border-radius: 0.2rem;
 
+            // Mobile max-500px
+            @media @mobile_500 {
+                width: 75%;
+            }
+
             // TARGET ALL CHILDREN
             * {
                 padding: 0.4rem;
@@ -145,6 +155,11 @@ main section.section__auction-items {
 
             h3 {
                 font-size: @x-sml * 1.5%;
+
+                // Mobile max-500px
+                @media @mobile_500 {
+                    font-size: @x-sml / 1%;
+                }
             }
         }
     }
