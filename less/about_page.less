@@ -1,0 +1,157 @@
+* {
+    border: none;
+}
+
+.aboutPageMain section.section__landing {
+    height: 35vh;
+    background-image: linear-gradient(#124559, #598392);
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: unset;
+        align-content: unset;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        color: #fafaff;
+        .landing__top{
+            height: 25%;
+            nav {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                align-content: unset;
+                height: 100%;
+                margin: 0 auto;
+                .header__logo {
+                    height: 80%;
+                    img{
+                        height: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                ul {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: unset;
+                    height: 70%;
+                    width: 40%;
+                    li {
+                        padding: 0.65rem;
+                        border-radius: 0.75rem;
+                        color: #fafaff;
+                    }
+                    a {
+                        margin: 0.2rem;
+                    }
+                }
+            }
+        }
+        .landing__bottom{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: unset;
+            align-content: unset;
+            height: 55%;
+            .landing__bottom-inner{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+                align-items: unset;
+                align-content: unset;
+                width: 75%;    
+                h1 {
+                    font-size: 3rem;
+                }
+            }            
+        }
+    }
+}
+
+// about page contents
+
+section.aboutContent{
+    padding: 0% 10%;
+    .what{
+        padding: 5% 0%;
+        h2 {
+            font-size: 1rem;
+        }
+        p{
+            font-size: .75rem;
+        }
+    }
+    .how{
+        padding: 5% 0%;
+        h2 {
+            font-size: 1rem;
+        }
+        p{
+            font-size: .75rem;
+        }
+    }
+    .when{
+        padding: 5% 0%;
+        h2 {
+            font-size: 1rem;
+        }
+        p{
+            font-size: .75rem;
+        }
+    }
+}
+
+//footer for the about page
+
+.footer_about{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-image: linear-gradient(#598392, #124559);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    ul {
+        display: flex;
+        li{
+            color: #fafaff;
+            margin: 0 1rem; 
+        }
+    }
+    .footer__div{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+}
+
+// mobile code for the about page
+
+@media (max-width: 500px){
+    .landing__top{
+        nav{
+            display: flex;
+            justify-content: center;
+            max-width: 50%;
+            .header__logo{
+                a{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .landing__bottom-inner{
+        h1{
+            display: flex;
+            flex-direction: flex-end;
+        }
+    }
+}
