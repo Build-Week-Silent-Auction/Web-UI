@@ -13,6 +13,15 @@
         // Window event listener for when all assets are loaded
         window.addEventListener('load', function () {
             let dropdown = document.getElementsByClassName("dropdown")[0];
+
+            dropdown.addEventListener('click', (e) => {
+                // Hidden navigation
+                let hiddenNav = document.querySelector(".nav-list__two");
+
+                // Click indicator
+                const eClick = e.target;
+                console.log(eClick);
+              
             dropdown.addEventListener('click', (e) => {
                 // Hidden navigation
                 let hiddenNav = document.querySelector(".nav-list__two");
@@ -142,21 +151,13 @@
                         <p>USD, CAD, GBP, EUR, AUD, NZD</p>
                     </div>
                     <div>
-                        <h2>You can find anything</h2>
-                        <p>From tablets to pencils, and sometimes cars                              </p>
-                    </div>                    
+                        <h2>sixth feature</h2>
+                        <p>something about feature six</p>
+                    </div>
                 </div>
             </div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
 
-                <a href="">See more</a>
+            <a href="">See all features</a>
             </div>
         </section>
         <section class="section__reviews">
