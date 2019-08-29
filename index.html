@@ -9,29 +9,29 @@
 
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-      <script>
-          // Window event listener for when all assets are loaded
-          window.addEventListener('load', function() {
-              let dropdown = document.getElementsByClassName("dropdown")[0];
+    <script>
+        // Window event listener for when all assets are loaded
+        window.addEventListener('load', function () {
+            let dropdown = document.getElementsByClassName("dropdown")[0];
 
-              dropdown.addEventListener('click', (e) => {
-                  // Hidden navigation
-                  let hiddenNav = document.querySelector(".nav-list__two");
+            dropdown.addEventListener('click', (e) => {
+                // Hidden navigation
+                let hiddenNav = document.querySelector(".nav-list__two");
 
-                  // Click indicator
-                  const eClick = e.target;
-                  console.log(eClick);
+                // Click indicator
+                const eClick = e.target;
+                console.log(eClick);
 
-                  // Validation if eClick is true, do action.
-                  if (eClick) {
-                      console.log(
-                          hiddenNav.classList.toggle("active"),
-                          hiddenNav.classList
-                          );
-                  }
-              })
-          })
-      </script>
+                // Validation if eClick is true, do action.
+                if (eClick) {
+                    console.log(
+                        hiddenNav.classList.toggle("active"),
+                        hiddenNav.classList
+                    );
+                }
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -151,19 +151,11 @@
                     <div>
                         <h2>sixth feature</h2>
                         <p>something about feature six</p>
-                    </div>                    
+                    </div>
                 </div>
             </div>
-                <!-- <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul> -->
 
-                <a href="">See all features</a>
+            <a href="">See all features</a>
             </div>
         </section>
         <section class="section__reviews">
