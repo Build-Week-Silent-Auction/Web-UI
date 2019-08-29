@@ -690,6 +690,15 @@ section.aboutContent .how {
 }
 section.aboutContent .how h2 {
   font-size: 1rem;
+  animation: 2s infinite alternate fadeout;
+}
+@keyframes fadeout {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 section.aboutContent .how p {
   font-size: 0.75rem;
