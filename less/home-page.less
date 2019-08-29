@@ -35,41 +35,29 @@ html {
     
     .reviews__review {
         display: flex;
-        text-decoration: none;
-        color: #fafaff;
+        flex-wrap: wrap;
+        // padding: 0.5rem, auto;
+        text-align: center;
+        color: @text;
+        padding: 2rem;
         font-size: 1rem;
-        justify-content: center;
-    }
 
-    .highlight-list {
-        display: flex;
-        justify-content: center;
-
-        h2 {
-            font-size: 0.75rem;
-        }
-
-        .coloumn-one {
-            display: flex;
-            flex-direction: column;
-            padding-right: 10%;
-
-            div {
-                padding: 20% 0%;
-            }
-        }
-
-        .coloumn-two {
-            display: flex;
-            flex-direction: column;
-            padding-left: 10%;
-
-            div {
-                padding: 20% 0%;
-            }
-        }
+        animation: 2s infinite alternate fadeout;
+        
     }
 }
+
+@keyframes fadeout {
+            
+        from{
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+        }
+    }
+
+   
 
 .section__highlights * {
     border: none;

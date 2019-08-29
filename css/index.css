@@ -330,131 +330,45 @@ main section.section__landing .landing__bottom .landing__bottom-inner a button {
   border-bottom: 1.5px solid #034c68;
   border-left: 1.5px solid #034c68;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  vertical-align: baseline;
+footer {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-image: linear-gradient(#598392, #124559);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+footer ul {
+  display: flex;
 }
-body {
-  line-height: 1;
+footer ul li {
+  color: #fafaff;
+  margin: 0 1rem;
 }
-ol,
-ul {
-  list-style: none;
+.footer__div {
+  display: flex;
+  flex-wrap: wrap;
 }
-blockquote,
-q {
-  quotes: none;
+@media (max-width: 500px) {
+  .footer__div {
+    flex-direction: column-reverse;
+  }
+  .footer__div a button {
+    justify-content: center;
+    margin-left: -4.5rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+  }
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+.footer__div a {
+  margin-left: 10rem;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.footer__div a button {
+  background-color: #598392;
+  color: #fafaff;
+  border-radius: 5px;
+  padding: 0.25rem;
+  border: none;
 }
 * {
   max-width: 100%;
@@ -476,35 +390,28 @@ html {
   justify-content: center;
   font-size: 1.2rem;
 }
-.section__highlights a {
+.reviews__carousel {
+  justify-content: center;
   display: flex;
-  text-decoration: none;
+  flex-wrap: wrap;
+  background-image: linear-gradient(#124559, #598392);
+}
+.reviews__carousel .reviews__review {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   color: #fafaff;
+  padding: 2rem;
   font-size: 1rem;
-  justify-content: center;
+  animation: 2s infinite alternate fadeout;
 }
-.section__highlights .highlight-list {
-  display: flex;
-  justify-content: center;
-}
-.section__highlights .highlight-list h2 {
-  font-size: 0.75rem;
-}
-.section__highlights .highlight-list .coloumn-one {
-  display: flex;
-  flex-direction: column;
-  padding-right: 10%;
-}
-.section__highlights .highlight-list .coloumn-one div {
-  padding: 20% 0%;
-}
-.section__highlights .highlight-list .coloumn-two {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10%;
-}
-.section__highlights .highlight-list .coloumn-two div {
-  padding: 20% 0%;
+@keyframes fadeout {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 .section__highlights * {
   border: none;
@@ -600,6 +507,14 @@ main section.section__auction-items div.auction__items .auction-item__container 
     font-size: 0.75rem;
   }
 }
+@keyframes fadeout {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 * {
   border: none;
 }
@@ -690,15 +605,6 @@ section.aboutContent .how {
 }
 section.aboutContent .how h2 {
   font-size: 1rem;
-  animation: 2s infinite alternate fadeout;
-}
-@keyframes fadeout {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
 }
 section.aboutContent .how p {
   font-size: 0.75rem;
