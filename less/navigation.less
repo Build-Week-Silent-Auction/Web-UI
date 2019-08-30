@@ -99,11 +99,11 @@ main section.section__landing {
                     border-color: rgba(250, 250, 255, 0.3);
                     border-radius: 0.15rem;
                     margin-top: 0.3rem;
-                    z-index: -1;
+                    visibility: hidden;
 
                     // Mobile max-500px
                     @media @mobile_500 {
-                        z-index: 1;
+                        visibility: visible;
                     }
 
 
@@ -122,8 +122,8 @@ main section.section__landing {
             // NAVIGATION
             .nav-list__two {
                 .flex(column, nowrap, center, center);
-                position: relative;
-                z-index: -1;
+                // position: relative;
+                visibility: hidden;
             }
         }
     }
